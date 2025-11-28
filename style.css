@@ -1,0 +1,288 @@
+body{
+    background: linear-gradient(to right, blue, white);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    padding: 20px;
+    background-color: rgb(25, 25, 36);
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+
+}
+
+nav a{
+    margin: 20px;
+
+}
+
+.hero-container{
+    align-items: center;
+    margin-top: 0px;
+    display: flex;
+    margin-bottom: 100px;
+    border-radius: 8px;
+    gap: 50%;
+    margin: 100px;
+}
+
+.left-container{
+    width: 350px;
+}
+
+.left-container img{
+    height:400px;
+    width: 400px;
+    border-radius: 50%;
+    display: block;
+    margin-top: 60px;
+}
+
+.right-container{
+        width: 350px;
+}
+
+.right-container h1{
+    font-size: 40px;
+}
+
+.right-container p{
+    margin-top: 30px;
+    line-height: 24px;
+
+}
+
+.right-container button{
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(98, 98, 197);
+    color: white;
+}
+
+.right-container button:hover{
+    background-color: brown;
+    color: rgb(8, 0, 0);
+}
+
+
+.about-container h2{
+
+
+ 
+ margin-bottom: 20px;
+ margin-top: 20px;
+    text-align: center;
+}
+
+.about-container{
+   background: linear-gradient(180deg, #4da6ff, #ffffff);
+
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin:150px;
+}
+
+.about-container{
+    margin-bottom: 20px;
+ margin-top: 20px;
+    text-align: center;
+}
+.about-container skills{
+     background: linear-gradient(180deg, #4da6ff, #ffffff);
+     border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin:150px;
+}
+
+.gradient-box{
+   
+    align-items: center;
+    margin-left:650px;
+    width: 500px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+section h1{
+    text-align: center;
+}
+.ski{
+
+}
+
+/* Footer Styling */
+footer {
+   background: #0f172a;  /* dark blue/black */
+   color: #ffffff;
+   padding: 40px 0;
+   margin-top: 60px;
+   font-family: Arial, sans-serif;
+}
+
+.footer-container {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   max-width: 1200px;
+   margin: auto;
+   padding: 20px;
+}
+
+.footer-left h2 {
+   margin-bottom: 10px;
+}
+
+.footer-middle ul {
+   list-style: none;
+   padding: 0;
+}
+
+.footer-middle ul li {
+   margin: 8px 0;
+}
+
+.footer-middle a {
+   color: #38bdf8;
+   text-decoration: none;
+}
+
+.footer-middle a:hover {
+   text-decoration: underline;
+}
+
+.footer-right .social-icons i {
+   font-size: 35px;
+   margin: 8px;
+   color: #38bdf8;
+   transition: 0.3s;
+}
+
+.footer-right .social-icons i:hover {
+   transform: scale(1.2);
+   color: #ffffff;
+}
+
+.footer-bottom {
+   text-align: center;
+   padding: 15px;
+   background: #0b1220;
+   margin-top: 20px;
+}
+
+.footer-bottom p {
+   margin: 0;
+   font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Colors */
+.social-icons .whatsapp   { background: #25D366; }
+.social-icons .instagram  { background: #E1306C; }
+.social-icons .facebook   { background: #1877F2; }
+.social-icons .twitter    { background: #1DA1F2; }
+
+/* Hover */
+.social-icons a:hover {
+  transform: scale(1.15);
+  opacity: 0.85;
+}
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a{
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    .hero-container{
+        flex-direction: column;
+        margin: 40px 10px;
+        gap: 20px;
+    }
+
+    .left-container img{
+        height: 250px;
+        width: 250px;
+    }
+
+    .right-container h1{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .right-container p{
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .right-container button{
+        display: block;
+        margin: 20px auto;
+    }
+
+    .about-container{
+        margin: 40px 10px;
+        padding: 15px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px){
+    .left-container img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .right-container h1{
+        font-size: 24px;
+    }
+
+    nav a{
+        font-size: 14px;
+    }
+}
